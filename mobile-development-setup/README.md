@@ -1,86 +1,50 @@
-# 📱 Mobile Development Setup & First App with Expo
+# Welcome to your Expo app 👋
 
-This document covers the setup of a mobile development environment using Expo and the creation of your first React Native app using the Expo Router template.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
----
+## Get started
 
-## ✅ Environment Setup
+1. Install dependencies
 
-### Tools Installed
+   ```bash
+   npm install
+   ```
 
-- **Node.js LTS** ✅
-- **Visual Studio Code** ✅
-- **Compatible OS**: Windows ✅
-- **Expo Go on Android** ✅
+2. Start the app
 
-### Expo Go Setup
+   ```bash
+   npx expo start
+   ```
 
-1. Installed **Expo Go** from the [Google Play Store](https://expo.dev/go).
-2. Logged into an existing Expo account successfully.
-3. Confirmed Expo Go runs properly and is ready to preview QR code builds.
+In the output, you'll find options to open the app in a
 
----
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-## 🚀 Creating Your First Mobile App with Expo Router
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-### 🔧 Steps Followed
+## Get a fresh project
 
-1. Opened terminal and navigated to the project directory:
-   ``
-   cd prodev-mobile-setup
-   Initialized a new Expo project using the latest Expo Router template:
+When you're ready, run:
 
-npx create-expo-app@latest .
-Opened the file:
-
-app/(tabs)/index.tsx
-Modified the default text:
-
-tsx
-
-// Original:
-Welcome!
-
-// Updated:
-** First App Created **
-Started the development server:
-
-npx expo start
-Used the Expo Go app to scan the QR code and run the app on an Android device.
-
-🔄 Resetting the Application
-Ran the reset command to clear project state:
-
+```bash
 npm run reset-project
-📝 Observations:
-After resetting, the project was refreshed.
+```
 
-A new directory named app-example was automatically created.
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-Inside this folder:
+## Learn more
 
-app-example/app/(tabs)/index.tsx (contains a default screen)
+To learn more about developing your project with Expo, look at the following resources:
 
-app-example/constants/Colors.tsx
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-It appears that app-example acts as a fallback demo or backup template after reset.
+## Join the community
 
-🛠️ Challenges Faced
-✅ No issues during setup or project initialization.
+Join our community of developers creating universal apps.
 
-❗ The creation of the app-example folder after reset was unexpected but did not affect the main app.
-
-📂 Directory Structure (Post Reset)
-
-prodev-mobile-setup/
-│
-├── app/ # Main project files
-│ └── (tabs)/index.tsx # Modified to show "** First App Created **"
-│
-├── app-example/ # Created after reset
-│ ├── app/(tabs)/index.tsx
-│ └── constants/Colors.tsx
-│
-├── README.md # This file
-✅ Status
-Mobile development environment is fully set up and tested. First app created, customized, and verified on a physical Android device using Expo Go.
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
